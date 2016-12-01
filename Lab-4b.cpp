@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
 		cout << "The student`s Name: ";
 		cin >> p[i].s.Name;
 		cin.clear();
-		cout << "The student`s surname: ";
+		cout << "The student`s Surname: ";
 		cin >> p[i].s.Surname;
 		cin.clear();
 		cout << "The student`s age ";
@@ -40,7 +40,8 @@ int main(int argc, char* argv[]) {
 		cin >> p[i].ball;
 	}
 	for (int i = 0; i < n; i++) {
-		cout  << "Name: " << p[i].s.Name << " " << "Surname: " << p[i].s.Surname << " " << "Age: " << p[i].s.age << " " << "Ball: " << p[i].ball << endl;
+	    cout << "Name: " << p[i].s.Name << " " << "Surname: " << p[i].s.Surname << " ";
+	    cout  << "Age: " << p[i].s.age << " " << "Number of school: " << p[i].s.number << " " << "Ball: " << p[i].ball << endl;
 		if (p[i].ball > max) max = p[i].ball;
 		if (p[i].ball < min) min = p[i].ball;
 	}
