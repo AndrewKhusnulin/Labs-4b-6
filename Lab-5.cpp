@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 	if (!sscanf_s(argv[1], "%d", &a))
 
 	{
-		cout << "Отсутствует параметр 1" << endl;;
+		cout << "Отсутствует параметр 1" << endl;
 		system("pause");
 		return 1;
 	}
 	if (!sscanf_s(argv[2], "%d", &b))
 	{
-		cout << "Отсутствует параметр 2" << endl;;
+		cout << "Отсутствует параметр 2" << endl;
 		system("pause");
 		return 1;
 	}
