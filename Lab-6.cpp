@@ -75,12 +75,12 @@ int main(int argc, char* argv[])
 		printf("Surname: ");
 		fflush(stdin);
 		gets_s(p->stud.surname, 31);
-		printf("Date: ");
-		fflush(stdin);
+		printf_s("Date: ");
+		fflush(stdin); cin.get();
 		gets_s(p->stud.date, 8);
-		printf("Points: ");
+		printf_s("Points: ");
 		fflush(stdin);
-		cin >> p->stud.points;	
+		cin >> p->stud.points;
 		addFirst(pF, p);
 		printf("Press 'y' or 'Y' to continue or press any other key to exit ");
 		ch = _getche();
@@ -94,7 +94,7 @@ int main(int argc, char* argv[])
 	{
 		double min = pi->stud.points;
 		list *pmin = pi;
-		for (list *pj = pi->pNext;pj; pj = pj->pNext)
+		for (list *pj = pi->pNext; pj; pj = pj->pNext)
 			if (pj->stud.points < min)
 			{
 				min = pj->stud.points;
